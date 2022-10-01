@@ -6,7 +6,7 @@ namespace back.Controllers;
 using Model;
 
 [ApiController]
-[Route("[user]")]
+[Route("user")]
 public class UserController : ControllerBase
 {
     //cadastro
@@ -15,7 +15,7 @@ public class UserController : ControllerBase
     {
         throw new NotImplementedException();
     }
-    [HttpPost("Register")]
+    [HttpPost("register")]
     public IActionResult Register([FromBody] UserDTO user)
     {
         //parte de conexão do banco
@@ -38,5 +38,6 @@ public class UserController : ControllerBase
     {
         //manda mensagem de erro
         throw new NotImplementedException();
+        
     }
 }
