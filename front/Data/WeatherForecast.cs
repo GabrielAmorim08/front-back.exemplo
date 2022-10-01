@@ -1,4 +1,4 @@
-namespace back;
+namespace front.Data;
 
 public class WeatherForecast
 {
